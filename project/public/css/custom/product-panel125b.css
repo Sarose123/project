@@ -1,0 +1,472 @@
+ .panel{
+    position: relative;
+    float: left;
+    width: 58%;
+}
+.editform .panel{
+    width: 100%;
+}
+.editform{
+    display: none;
+    position: fixed;
+    max-width: 600px;
+    background: rgba(216, 216, 216, 0.93);
+    left: calc(50% - 300px);
+    z-index: 111;
+    top: calc(50% - 150px);
+    border: 1px solid silver;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+ }
+.editform .eidform-close{
+    position: absolute;
+    right: -10px;
+    font-size: 15px;
+    padding: 4px 7px;
+    background: #ec0000;
+    border-radius: 100%;
+    top: -10px;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.54);
+    cursor: pointer;
+}
+.show-form{
+    display: block;
+    animation-name: show-edit;
+    animation-iteration-count: 1;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+.edit-ptod{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#wooswipe .single-product-main-image img{
+    max-height: 200px;
+}
+.panel .row{
+
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+
+
+}
+.panel .row.full-row{
+
+    width: 100%;
+
+}
+.panel .row .count-nav{
+
+
+
+}
+.panel .row .count-nav input{
+
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px;
+    border: none;
+    text-align: center;
+
+}
+.panel .row .count-nav .quantity-up{
+
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 19px;
+    right: 12px;
+    border-radius: 100%;
+    background-color: #333333;
+    z-index: 10;
+    padding-top: 3px;
+    cursor: pointer;
+    color: white;
+
+}
+.panel .row .count-nav .quantity-down{
+
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 19px;
+    left: 12px;
+    border-radius: 100%;
+    background-color: #333333;
+    z-index: 10;
+    line-height: 19px;
+    padding-top: 1px;
+    cursor: pointer;
+    color: white;
+
+}
+.panel .row select{
+
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.panel .row .update_cart{
+     padding: 10px;
+     cursor: pointer;
+     display: block;
+     border-radius: 5px;
+     background-color: #00ac00;
+     border: 1px solid #ffffff;
+     box-sizing: border-box;
+     width: 100%;
+     height: 40px;
+     line-height: 1;
+     font-weight: 600;
+     color: #fff;
+     -moz-transition: all 0.2s ease-in;
+     -o-transition: all 0.2s ease-in;
+     -webkit-transition: all 0.2s ease-in;
+     transition: all 0.2s ease-in;
+}
+.panel .row .update_cart:hover{
+    color: #00ac00;
+    background: white;
+}
+.panel .row .prod-services .delivery{
+    text-align: left;
+}
+.panel .row  .up_file{
+    text-align: left;
+}
+.quantity .row{
+    width: 100%;
+    position: relative;
+}
+.woocommerce.single-product .quantity .row .qty{
+    width: 100%;
+}
+ .panel .row.empty{
+    min-height: 65px;
+}
+
+ .panel .row input[type$=number]{
+
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    color: #00ac00;
+
+}
+ .panel .row textarea{
+
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: navajowhite;
+    resize: none;
+    border-radius: 5px;
+
+}
+ .panel .row .file-upload-button{
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    line-height: 1;
+    font-weight: 600;
+    color: #000;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.file-upload-button:after {
+    content: 'only docx, txt, rtf, pdf, jpg, png, xlsx, zip, rar';
+    display: block;
+    font-size: 10px;
+    line-height: 11px;
+}
+ .panel .row .file-upload-button:hover{
+    background-color: white;
+}
+ .row input[type$=number] + .quantity-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+ .row input[type$=number] + .quantity-nav .quantity-button.quantity-up {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 10px;
+    right: 10px;
+    border-radius: 100%;
+    background-color: #333333;
+    z-index: 10;
+    padding-top: 3px;
+    cursor: pointer;
+}
+ .row input[type$=number] + .quantity-nav .quantity-button.quantity-down {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 10px;
+    left: 10px;
+    border-radius: 100%;
+    background-color: #333333;
+    z-index: 10;
+    line-height: 19px;
+    padding-top: 1px;
+    cursor: pointer;
+}
+ .panel .row span.tooltip {
+    font-size: 11px;
+    padding: 5px;
+    color: #59b400;
+    position: relative;
+    cursor: pointer;
+}
+ .panel span.tooltip .msgtool{
+
+    display: none;
+    position: absolute;
+    color: #59b400;
+    background: white;
+    padding: 6px 10px;
+    font-size: 15px;
+    left: 43px;
+    top: -1px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px #8d8d8d;
+    max-width: 200px;
+    width: -moz-max-content;
+    z-index: 11;
+}
+
+ .panel span.tooltip:hover .msgtool{
+
+    display: table;
+
+}
+ .panel span.tooltip:hover .msgtool:before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #c4c4c4;
+    left: -10px;
+    top: 4px;
+}
+.up_files{
+    display: block;
+}
+.up_file{
+    position: relative;
+    width: 100%;
+    margin: 10px 0px;
+}
+.up_file span.logo{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -1px;
+}
+.remove{
+    background-image: url(../img/close-icon.png);
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 10px;
+    opacity: .7;
+    top: -1px;
+    position: relative;
+}
+.remove:hover{
+    opacity: 1;
+}
+.form-columns .up_file span.logo.txt{
+    background-image: url(../img/txticon.png);
+}
+.form-columns .up_file span.logo.rtf{
+    background-image: url(../img/rtficon.png);
+}
+.form-columns .up_file span.logo.doc{
+    background-image: url(../img/docicon.png);
+}
+.form-columns .up_file span.logo.docx{
+    background-image: url(../img/docxicon.png);
+}
+.form-columns .up_file span.logo.pdf{
+    background-image: url(../img/pdficon.png);
+}
+.form-columns .up_file span.logo.xlsx{
+    background-image: url(../img/xlsx-icon.png);
+}
+.form-columns .up_file span.logo.jpg{
+    background-image: url(../img/jpg-icon.png);
+}
+.form-columns .up_file span.logo.png {
+     background-image: url(../img/pngicon.png);
+}
+
+.up_file span.name{
+    color: #434343;
+    display: inline-block;
+    padding: 0 10px;
+    height: 18px;
+    max-width: calc(100% - 56px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.info-holder{
+    position: relative;
+}
+.info-holder textarea{
+
+}
+.info-holder span{
+    position: absolute;
+    top: 50px;
+    padding: 10px;
+    background: #59b400;
+    color: white;
+    border-radius: 10px;
+    right: 25px;
+    z-index: 99;
+    display: none;
+}
+.info-holder span:after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 28px solid #59b400;
+    position: absolute;
+    top: -20px;
+    right: -6px;
+    transform: rotateZ(25deg);
+
+}
+.info-holder i:hover + span{
+
+    display: block;
+
+}
+.info-holder i{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    right: 0px;
+    background-image: url(../img/info.svg);
+    background-size: 21px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+
+.loaing{
+
+    transform: rotateX(180deg);
+    color: transparent !important;
+    background-image: linear-gradient( -45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent );
+    background-color: #59b400 !important;
+    background-size: 50px 50px;
+    animation-name: loading_bg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    cursor: not-allowed;
+
+}
+.loaing:after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    background: white;
+    top: 0px;
+    transition: .5s;
+}
+.loaing.l_10:after{
+    width: 90%;
+}
+.loaing.l_20:after{
+    width: 80%;
+}
+.loaing.l_30:after{
+    width: 70%;
+}
+.loaing.l_40:after{
+    width: 60%;
+}
+.loaing.l_50:after{
+    width: 50%;
+}
+.loaing.l_60:after{
+    width: 40%;
+}
+.loaing.l_70:after{
+    width: 30%;
+}
+.loaing.l_80:after{
+    width: 20%;
+}
+.loaing.l_90:after{
+    width: 10%;
+}
+.loaing.l_100:after{
+    width: 0%;
+}
+.loaing:hover{
+
+    transform: rotateX(180deg);
+    color: transparent !important;
+    background-image: linear-gradient( -45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent )!important;
+    background-color: #59b400!important;
+    background-size: 50px 50px;
+    animation-name: loading_bg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes loading_bg {
+
+    from{ background-position: 0; }
+    to{ background-position: 100px; }
+
+}

@@ -1,0 +1,49 @@
+.fb-button {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: #4a4ac7;
+    border-radius: 5px;
+
+    font-size: 14px;
+    background-image: url(../img/fb.png);
+    background-repeat: no-repeat;
+    background-position: 15px;
+    transition: all 0.3s ease-in-out;
+
+}
+.gplus-button {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: #f03434;
+    border-radius: 5px;
+
+    font-size: 14px;
+    background-image: url(../img/google.png);
+    background-repeat: no-repeat;
+    background-position: 15px;
+    transition: all 0.3s ease-in-out;
+
+}
+.fb-button, .gplus-button {
+    flex: 1;
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 0;
+    max-width: 300px;
+}
+.fb-button:hover,
+.gplus-button:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+.social-sign-up.fullw .fb-button, .social-sign-up.fullw .gplus-button{
+
+    max-width: 100%;
+    padding-left: 40px;
+}
